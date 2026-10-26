@@ -1,0 +1,930 @@
+{
+  "version": 1,
+  "warnings": [
+    "Row 3: one or more tool detail fields are blank.",
+    "Row 5: one or more tool detail fields are blank.",
+    "Row 6: one or more tool detail fields are blank.",
+    "Row 7: one or more tool detail fields are blank.",
+    "Row 33: one or more tool detail fields are blank.",
+    "Row 34: one or more tool detail fields are blank.",
+    "Row 35: one or more tool detail fields are blank.",
+    "Row 54: one or more tool detail fields are blank."
+  ],
+  "processes": [
+    {
+      "order": 1,
+      "mainTask": "Data Precheck",
+      "taskName": "Datachecker",
+      "taskType": "Main",
+      "slug": "datachecker",
+      "tools": [
+        {
+          "name": "Datachecker",
+          "explanation": "Automate inner status check process in datachecker website.",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\1_Data_Preparation\\Datachecker",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "mainTask": "Data Precheck",
+      "taskName": "Series Grouping",
+      "taskType": "Main",
+      "slug": "series-grouping",
+      "tools": [
+        {
+          "name": "",
+          "explanation": "",
+          "version": "",
+          "filePath": "",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "mainTask": "Data Precheck",
+      "taskName": "Categorization",
+      "taskType": "Main",
+      "slug": "categorization",
+      "tools": [
+        {
+          "name": "Categorization Assistance",
+          "explanation": "Searching category in TH and UK subsidiaries by keyword",
+          "version": "1.2",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\1_Data_Preparation\\Categorization Assistance",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": true
+        },
+        {
+          "name": "Category Suggestion Tool",
+          "explanation": "Suggest category and 5 product series in chk0 according to keywords and subsidiary",
+          "version": "Testing",
+          "filePath": "",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "mainTask": "Data Preparation",
+      "taskName": "[Data Prep.] Series Name Editing",
+      "taskType": "Main",
+      "slug": "data-prep-series-name-editing",
+      "tools": [
+        {
+          "name": "",
+          "explanation": "",
+          "version": "",
+          "filePath": "",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "mainTask": "Data Preparation",
+      "taskName": "[Data Prep.] Catch Copy Preparation",
+      "taskType": "Main",
+      "slug": "data-prep-catch-copy-preparation",
+      "tools": [
+        {
+          "name": "",
+          "explanation": "",
+          "version": "",
+          "filePath": "",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 6,
+      "mainTask": "Data Preparation",
+      "taskName": "[Data Prep.] Specs Collection",
+      "taskType": "Main",
+      "slug": "data-prep-specs-collection",
+      "tools": [
+        {
+          "name": "HTML_Extract_ABB",
+          "explanation": "Extract spec data from ABB website",
+          "version": "1.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\ABB",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "AMFT_Product_Crawler",
+          "explanation": "Extract following data from AMFT website:\n1. Product Category\n2. Product Name\n3. Product Image\n4. Catchcopy\n5. Product Grouping\n6. Spec",
+          "version": "1.0.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\AMFT",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "PDF_Product Extractor_BOSCH",
+          "explanation": "Extract following data from PDF (compatible only certain layout). Update required for more layouts:\n1. Series Name\n2. Product Image\n3. Spec",
+          "version": "1.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\BOSCH",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Danfoss_Data_Crawler",
+          "explanation": "Collect spec data from Danfoss website.",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\Danfoss",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "DFS_Data_Collector",
+          "explanation": "Collect following data from DFS website:\n1. Product Category\n2. Catchcopy (Short)\n3. Catchcopy (Long)",
+          "version": "1.4",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\DFS",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "GSCH_PDImage_Download",
+          "explanation": "Download product image from GSCH website",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\GSCH",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "IFM_Data_Crawler",
+          "explanation": "Collect according to country and language setting in excel file:\n1. Product Image\n2. Series Name\n3. Catchcopy\n4. Spec",
+          "version": "1.2",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\IFM",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "KIPP_Data_Collection_Tool",
+          "explanation": "Collect following data from KIPP website with EU langauges (EN/DE/FR/IT):\n1. Product Name\n2. Catchcopy",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\KIPP",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "KITZ_Data_Crawler",
+          "explanation": "Download PDF according to KIT website URL and collect spec.",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\KITZ",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Madler Crawler",
+          "explanation": "Collect data and download from Madler website:\n1. Product Name\n2. Catchcopy\n3. Product Image",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\MADL",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Mitsubishi Data Crawler",
+          "explanation": "Collect following data from Mitsubishi website:\n1. Product Image\n2. Product Name\n3. Catchcopy\n4. Product Category\n5. Spec",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\Mitsubishi",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "NORE_Catchcopy_Collection_Tool",
+          "explanation": "Collect catchcopy according to your subsidairy selection in the tool from Nore website.",
+          "version": "2.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\Nore",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "OrientalMotor_Data_Crawler",
+          "explanation": "Collect following items from Oriental Motor website:\n1. Series Name\n2. Catchcopy\n3. Product Name\n4. Product Category\n5. Spec",
+          "version": "1.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\Oriental Motor",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Parker_Crawler",
+          "explanation": "Collect spec from PDF downloaded from Parker website.",
+          "version": "1.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\Parker",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Schneider_PDF_Extractor",
+          "explanation": "Collect spec from PDF downloaded from Schneider website",
+          "version": "1.0.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\Schneider",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Siemens PDF Downloader",
+          "explanation": "Download PDF from Siemens website",
+          "version": "2.2",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\Siemens",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Siemens_Data_Crawler",
+          "explanation": "Collect spec from Siemens website",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\Siemens",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "HTML_Extract_SKF",
+          "explanation": "Collect spec from SKF website",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\SKF",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "SMC_Data_Crawler",
+          "explanation": "Collect following data from SMC website:\n1. Series Name\n2. Catchcopy\n3. Product Image\n4. Product Category\n5. Spec",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\SMC",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "TORW Data Crawler",
+          "explanation": "Collect spec from Torwegge website",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\TORW",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": true,
+          "isNewVersion": false
+        },
+        {
+          "name": "Weidmuller_Data_Crawler",
+          "explanation": "Collect spec from Weidmuller website",
+          "version": "1.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\0_Data Crawler\\Weidmuller",
+          "tags": [
+            "Data Crawler for brands"
+          ],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Excel_Source_Extractor_For_EU_data",
+          "explanation": "To extract data from excel format extracted from BMEcat. You can free select what header, content to collect in tool setting",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\1_Data_Preparation\\Excel_Source_Extractor_For_EU_data",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "BMEcat Extractor+CSV Keyword Extractor",
+          "explanation": "Extract data from BMEcat file according to your target. You can also use CSV Keyword Extractor to filter data from output file.",
+          "version": "1.5.1+1.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\1_Data_Preparation\\BMEcat Extractor",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "JSON to Excel Spec Extractor",
+          "explanation": "Extract data from JSON to excel output file.",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\1_Data_Preparation\\JSON to Excel Spec Extractor",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 7,
+      "mainTask": "Data Preparation",
+      "taskName": "[Data Prep.] Specs Editing",
+      "taskType": "Main",
+      "slug": "data-prep-specs-editing",
+      "tools": [
+        {
+          "name": "H_to_V_Formatter",
+          "explanation": "Change data from horizontal to vertical such as datasheet when replacing datasheet registration",
+          "version": "1.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\1_Data_Preparation\\H_to_V_Formatter",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "mainTask": "Data Preparation",
+      "taskName": "[Data Prep.] Product Image Preparation",
+      "taskType": "Main",
+      "slug": "data-prep-product-image-preparation",
+      "tools": [
+        {
+          "name": "",
+          "explanation": "",
+          "version": "",
+          "filePath": "",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "mainTask": "Data Preparation",
+      "taskName": "[Data Prep.] Product Image Editing",
+      "taskType": "Main",
+      "slug": "data-prep-product-image-editing",
+      "tools": [
+        {
+          "name": "",
+          "explanation": "",
+          "version": "",
+          "filePath": "",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "mainTask": "Data Preparation",
+      "taskName": "[Data Prep.] Digital Book Preparation",
+      "taskType": "Additional",
+      "slug": "data-prep-digital-book-preparation",
+      "tools": [
+        {
+          "name": "",
+          "explanation": "",
+          "version": "",
+          "filePath": "",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 11,
+      "mainTask": "Data Preparation",
+      "taskName": "[Data Prep.] WYSIWYG Preparation",
+      "taskType": "Additional",
+      "slug": "data-prep-wysiwyg-preparation",
+      "tools": [
+        {
+          "name": "HTML Editor",
+          "explanation": "To edit WYSIWYG before uploading into Newton",
+          "version": "0.7",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\HTML_Editor",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Excel to HTML Converter",
+          "explanation": "**Please be aware of excel cell limit. HTML code over 32,767 characters cannot be used with this tool**\nUse this tool for following functions:\n1. Convert code in excel to HTML file\n2. Convert HTML file into plain text code in excel\n3. Change HTML file name and zip for WYSIWYG upload",
+          "version": "1.1.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\Excel to HTML Converter",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 12,
+      "mainTask": "Data Preparation",
+      "taskName": "[Data Prep.] Material Download",
+      "taskType": "Additional",
+      "slug": "data-prep-material-download",
+      "tools": [
+        {
+          "name": "Source_Image_Downloader",
+          "explanation": "Download images from URL in BMEcat, JSON and excel file.",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\1_Data_Preparation\\Source_Image_Downloader",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "mainTask": "Data Preparation",
+      "taskName": "Download Series Master from Data Reference",
+      "taskType": "Additional",
+      "slug": "download-series-master-from-data-reference",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [DR-1] function to download series master from data reference",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 14,
+      "mainTask": "Data Preparation",
+      "taskName": "Download C/D Spec from Data Reference",
+      "taskType": "Additional",
+      "slug": "download-c-d-spec-from-data-reference",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [DR-2] function to download C/D spec from data reference",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 15,
+      "mainTask": "Data Preparation",
+      "taskName": "Download Datasheet from Data Reference",
+      "taskType": "Additional",
+      "slug": "download-datasheet-from-data-reference",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [DR-3] function to download datasheet from data reference",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 16,
+      "mainTask": "Data Preparation",
+      "taskName": "Download WYSIWYG from Data Reference",
+      "taskType": "Additional",
+      "slug": "download-wysiwyg-from-data-reference",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [DR-4] function to download datasheet from data reference",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 17,
+      "mainTask": "Data Preparation",
+      "taskName": "Extract FAQ from Data Reference",
+      "taskType": "Additional",
+      "slug": "extract-faq-from-data-reference",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [DR-5] function to download datasheet from data reference",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 18,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] Project Creation",
+      "taskType": "Main",
+      "slug": "mdm-reg-project-creation",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [PJ-1] function to create project",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 19,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] Series Master Registration",
+      "taskType": "Main",
+      "slug": "mdm-reg-series-master-registration",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [M-1.1] to [M-1.3] functions to do following processes for series master registration with 1. New series task: \n1. Series Master Download \n2. Series Master Registration \n3. Series Master Upload",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 20,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] Product Image Registration",
+      "taskType": "Main",
+      "slug": "mdm-reg-product-image-registration",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [M-5] function to upload product image into series",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 21,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] FAQ Registration",
+      "taskType": "Additional",
+      "slug": "mdm-reg-faq-registration",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [M-7] function to upload FAQ into target series",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 22,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] Inner Distribution",
+      "taskType": "Main",
+      "slug": "mdm-reg-inner-distribution",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [M-2] function to assign inner. For inners with error, use [M-2E] to recheck inner with errors.",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 23,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] CD Specs Check and Reg.",
+      "taskType": "Main",
+      "slug": "mdm-reg-cd-specs-check-and-reg",
+      "tools": [
+        {
+          "name": "Spec Header Input Tool",
+          "explanation": "Use for create/change new C, D spec header into C/D Spec file",
+          "version": "V.1.2",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\Spec Header Input Tool",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [M-3.1] and [M-3.2] to download and upload C/D Spec files.",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 24,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] Datasheet Registration",
+      "taskType": "Main",
+      "slug": "mdm-reg-datasheet-registration",
+      "tools": [
+        {
+          "name": "Datasheet Input Tool",
+          "explanation": "To input spec into multiple datasheets. Can be use both cate x brand or by series.",
+          "version": "V.2.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\Datasheet input tool",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "MDM Automation Control",
+          "explanation": "For cate x brand:\nuse [M-4.1-1] and [M-4.2-1] for download and upload datasheet by cate x brand.\n\nFor by series:\nuse [M-4.2-1] and [M-4.2-2] for download and upload datasheet by series.",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 25,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] WYSIWYG Registration",
+      "taskType": "Additional",
+      "slug": "mdm-reg-wysiwyg-registration",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [M-6.1] and [M-6.2] for WYSIWYG download and upload",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 26,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] Keylist Task",
+      "taskType": "Additional",
+      "slug": "mdm-reg-keylist-task",
+      "tools": [
+        {
+          "name": "",
+          "explanation": "",
+          "version": "",
+          "filePath": "",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 27,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] Inner Transfer",
+      "taskType": "Additional",
+      "slug": "mdm-reg-inner-transfer",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [M-8] to transfer inner with target",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 28,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] Material Transfer",
+      "taskType": "Additional",
+      "slug": "mdm-reg-material-transfer",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [M-9] to transfer material",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 29,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] Series Master Replace",
+      "taskType": "Additional",
+      "slug": "mdm-reg-series-master-replace",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [M-1.1] to [M-1.3] functions to do following processes for series master registration with 2. Update series task: \n1. Series Master Download \n2. Series Master Registration \n3. Series Master Upload",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 30,
+      "mainTask": "MDM Registration",
+      "taskName": "[MDM Reg.] Datasheet Replace",
+      "taskType": "Additional",
+      "slug": "mdm-reg-datasheet-replace",
+      "tools": [
+        {
+          "name": "H to V formatter",
+          "explanation": "For replacing spec to other subs: use H to V formatter to change spec in datasheet into the list that can be filtered. Use xlookup to replace spec",
+          "version": "1.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\Webcheck tool",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Datasheet Input Tool",
+          "explanation": "To input spec into multiple datasheets. Can be use both cate x brand or by series.",
+          "version": "V.2.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\Datasheet input tool",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "MDM Automation Control",
+          "explanation": "For cate x brand:\nuse [M-4.1-1] and [M-4.2-1] for download and upload datasheet by cate x brand.\n\nFor by series:\nuse [M-4.2-1] and [M-4.2-2] for download and upload datasheet by series.",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 31,
+      "mainTask": "Webcheck",
+      "taskName": "[QC] Webcheck and Revision",
+      "taskType": "Main",
+      "slug": "qc-webcheck-and-revision",
+      "tools": [
+        {
+          "name": "Webcheck Tool",
+          "explanation": "To webcheck following items according to subsidiary set in Webcheck Template file.",
+          "version": "1.7.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\Webcheck tool",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Frontsite Crawler",
+          "explanation": "To check front site status and crawl inner amount for existing series.",
+          "version": "1.4",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\1_Data_Preparation\\Frontsite_Crawler",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 32,
+      "mainTask": "Webcheck",
+      "taskName": "[QC] Internal QC",
+      "taskType": "Main",
+      "slug": "qc-internal-qc",
+      "tools": [
+        {
+          "name": "Datasheet Compare Check",
+          "explanation": "To compare between source datasheet and target datasheet after transferred data according to the target inner you set. It will check following items:\n1. Spec Search Item Code\n2. Spec existance between source and target",
+          "version": "1.1",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\Datasheet Compare Check",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        },
+        {
+          "name": "Unique Spec Check Tool",
+          "explanation": "To check inner uniqueness and following items:\n1. Spec consistency\n2. Stimulate configure to check before chk0 reflection",
+          "version": "1.0",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\Spec Unique Check Tool",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    },
+    {
+      "order": 33,
+      "mainTask": "Publication",
+      "taskName": "[MDM Reg.] Publication",
+      "taskType": "Main",
+      "slug": "mdm-reg-publication",
+      "tools": [
+        {
+          "name": "MDM Automation Control",
+          "explanation": "Use [PJ-2] Function to publish projects pr use [PJ-4] to change reflection date in each project",
+          "version": "1.9",
+          "filePath": "\\\\192.168.11.110\\Share_Server\\Exchange\\5_AKT-Application_Tool\\MISUMI\\6. Python Tools for General Projects\\2_MDM_Registration\\MDM Automation Control",
+          "tags": [],
+          "isNew": false,
+          "isNewVersion": false
+        }
+      ]
+    }
+  ]
+}
